@@ -1,0 +1,48 @@
+[project]
+name = "DANGER"
+readme = "README.md"
+description = "DANGER is a DAta-driven Network GEneration Resource which combines algorithmic reaction enumeration, machine learning interatomic potentials (MLIPs), and machine learning-based reaction path optimization to "
+version = "0.0.1"
+authors = [
+    { name = "Evan Walter Clark Spotte-Smith", email = "espottesmith@gmail.com" }
+]
+maintainers = [
+    { name = "Evan Walter Clark Spotte-Smith", email = "espottesmith@gmail.com" }
+]
+dependencies = [
+    "numpy",
+    "torch",
+    "ase",
+    "fairchem-core==2.2.0",
+    "popcornn",
+    "yarp"
+]
+keywords = ["Chemistry", "Reaction path", "Chemical reaction network", "Reaction exploration", "Machine learning interatomic potential", "MLIP"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: Unix",
+    "Operating System :: MacOS",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "black",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.urls]
+repository = "https://github.com/CoReACTER/DANGER"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
