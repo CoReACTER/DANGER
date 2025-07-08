@@ -15,7 +15,8 @@ dependencies = [
     "ase",
     "fairchem-core==2.2.0",
     "popcornn",
-    "yarp"
+    "yarp",
+    "sella",
 ]
 keywords = ["Chemistry", "Reaction path", "Chemical reaction network", "Reaction exploration", "Machine learning interatomic potential", "MLIP"]
 classifiers = [

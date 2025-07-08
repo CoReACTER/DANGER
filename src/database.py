@@ -11,14 +11,14 @@ create_provenance_table = """
         parent_id               INTEGER,
         calc_method             TEXT,
         level_of_theory         TEXT,
-        index                   INTEGER
+        index                   INTEGER,
+        path                    TEXT
     );
 """
 
 create_state_table = """
     CREATE TABLE states (
         id                      TEXT NOT NULL PRIMARY KEY,
-        path                    TEXT NOT NULL,
         provenance_id           TEXT NOT NULL,
         alphabetical_formula    TEXT NOT NULL,
         graph_hash              TEXT NOT NULL,
@@ -27,9 +27,9 @@ create_state_table = """
         charge                  INTEGER NOT NULL,
         spin                    INTEGER NOT NULL,
         energy                  REAL,
-        enthalpy_298            REAL,
-        entropy_298             REAL,
-        free_energy_298         REAL
+        enthalpy                REAL,
+        entropy                 REAL,
+        free_energy             REAL
     );
 """
 
@@ -49,8 +49,8 @@ create_reaction_table = """
         product_complex_id      TEXT NOT NULL,
         transition_state_id     TEXT,
         dE                      REAL,
-        dH_298                  REAL,
-        dS_298                  REAL,
-        dG_298                  REAL
+        dH                      REAL,
+        dS                      REAL,
+        dG                      REAL
     );
 """
