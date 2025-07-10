@@ -28,7 +28,7 @@ class Origin(Enum):
     ENDPOINT = 6  # Obtained from some reaction endpoint
 
 
-class Provenance():
+class Provenance:
     """
     Container class for data provenance
 
